@@ -27,7 +27,7 @@ def createJIRA():
     comment_body = data.get("comment", {}).get("body")
     print("Comment body received:", comment_body) 
 
-    if "jira" in data.get("comment",{}).get("body"):
+    if "/jira" in data.get("comment",{}).get("body"):
 
         payload = json.dumps( {
         "fields": {
